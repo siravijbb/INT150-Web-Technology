@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 14 FlexLayout</title>
+    <style>
+        #container {
+            display: flex ;
+            flex-direction: column ;
+            width: 300px ;
+            height: 600px ;
+        }
+        .box {
+            border: 1px solid black ;
+        }
+        #box1 {
+            background-color: purple;
+        }
+        #box2 {
+            background-color: white;
+        }
+        #box3 {
+            background-color: red;
+        }
+        #box4 {
+            background-color: blue;
+        }
+        #box5 {
+            background-color: green;
+        }
+        #box6 {
+            background-color: cyan;
+
+        }
+        #box7 {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div style="display:flex; flex: 3;">
+            <div style="display: flex; flex-direction: column; flex: 1 ;">
+                <div style="flex: 1 3" id="box1" class="box">1</div>
+                <div style="flex: 2 3" id="box2" class="box">2</div>
+            </div>
+            <div style="flex: 3;" id="box3" class="box">3</div>
+        </div>
+        <div style="display: flex; flex: 1 0;">
+            <div style="display: flex; flex:6;">
+                <div id="box4" class="box" style="display: flex; flex:3  ">4</div>
+                <div id="box5" class="box" style=" flex:   5">5</div>
+            </div>
+                <div style="display: flex; flex-direction: column;  flex: 3 " >
+                    <div id="box6" class="box" style="display: flex; flex: 1 1 ">6</div>
+                    <div id="box7" class="box" style="display: flex; flex:  1 1">7</div>
+                </div>
+        </div>
+    </div>
+</body>
+</html>
