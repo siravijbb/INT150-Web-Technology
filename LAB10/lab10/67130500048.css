@@ -38,23 +38,44 @@ html {
     font-family: verdana, sans-serif;
     background-color: #783F27;
   }
-  nav ul li a:link, nav ul li a:visited {
+nav ul li a {
+  flex-direction: column;
+  display: flex;
+  border: 1px solid ;
+  border-radius: 0.5em ;
+  padding: 0.5em 1em ;
+  margin: 0.5em ;
+}
+
+nav ul li a:link, nav ul li a:visited {
     color: #F9AB33;
   }
   nav ul li a:focus, nav ul li a:hover, nav ul li a:active {
     color: #fff;
   }
-  nav ul {
-    margin: 0;
-  }
+nav ul {
+  margin: 0;
+  padding: 0 ;
+  list-style-type:  none;
+  display: flex ;
+  justify-content: center;
+}
+
   nav ul li {
     font-size: .8em;
     text-transform: uppercase;
     letter-spacing: .2em;
-  } 
+  }
+
+
 
   #menu {
     border: 3px solid #783F27;
+    display: flex ;
+    flex-direction: row;
+    align-items: stretch;
+    flex-flow: row wrap ;
+    justify-content: center;
   }
 
   section {
@@ -63,6 +84,9 @@ html {
     padding: 20px;
     border: 1px dotted maroon;
     width: 240px;
+    display: flex ;
+    flex-direction: column;
+    flex: auto ;
   }
 
   .title {
@@ -77,4 +101,12 @@ html {
     padding: 5px;
     width: 100%;
     text-align: center;
+    margin-top: auto ;
   }
+.photo {
+  order: -1 ;
+}
+img {
+  width: 100% ;
+}
+
